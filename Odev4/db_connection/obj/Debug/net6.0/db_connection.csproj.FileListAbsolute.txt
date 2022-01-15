@@ -51,3 +51,4 @@ C:\Users\happy\source\repos\bootcampHomeworks\Odev4\db_connection\bin\Debug\net6
 C:\Users\happy\source\repos\bootcampHomeworks\Odev4\db_connection\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\happy\source\repos\bootcampHomeworks\Odev4\db_connection\bin\Debug\net6.0\DAL.dll
 C:\Users\happy\source\repos\bootcampHomeworks\Odev4\db_connection\bin\Debug\net6.0\DAL.pdb
+C:\Users\happy\source\repos\bootcampHomeworks\Odev4\db_connection\obj\Debug\net6.0\db_connection.MvcApplicationPartsAssemblyInfo.cs

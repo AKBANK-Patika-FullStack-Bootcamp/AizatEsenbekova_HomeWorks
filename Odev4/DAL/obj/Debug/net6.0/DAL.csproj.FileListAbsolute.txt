@@ -9,3 +9,4 @@ C:\Users\happy\source\repos\bootcampHomeworks\Odev4\DAL\bin\Debug\net6.0\DAL.pdb
 C:\Users\happy\source\repos\bootcampHomeworks\Odev4\DAL\obj\Debug\net6.0\DAL.dll
 C:\Users\happy\source\repos\bootcampHomeworks\Odev4\DAL\obj\Debug\net6.0\ref\DAL.dll
 C:\Users\happy\source\repos\bootcampHomeworks\Odev4\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\happy\source\repos\bootcampHomeworks\Odev4\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache

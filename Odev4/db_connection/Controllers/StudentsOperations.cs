@@ -6,14 +6,31 @@ namespace db_connection.Controllers
     [Route("[controller]")]
     public class StudentsOperations : ControllerBase
     {
-        List<Student> resultList= new List<Student>();
+        List<Student> resultList = new List<Student>();
         [HttpGet]
+
+        //return all students' list
         public List<Student> GetStudents()
         {
             resultList = AddStudents();
             return resultList;
         }
+        //take student by id
+        [HttpGet("{id}")]
+
+        public Student getStudent(int id)
+        {
+            resultList = AddStudents();
+            Student student = new Student();
+            //find student
+            student = resultList.FirstOrDefault(x => x.Id == id);
+            return student;
+        }
+
+
         [HttpPost]
+
+        //fill students' list
         public List<Student> AddStudents()
         {
             List<Student>lst = new List<Student>();
