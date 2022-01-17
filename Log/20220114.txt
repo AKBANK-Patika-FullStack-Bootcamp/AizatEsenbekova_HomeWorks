@@ -1,0 +1,7 @@
+1/14/2022 1:06:56 PM:2 nolu Ogrenci başarıyla silindi
+1/14/2022 1:08:48 PM:3 nolu Ogrenci başarıyla silindi
+1/14/2022 1:29:57 PM:4 nolu Ogrenci başarıyla silindi
+1/14/2022 1:38:36 PM: 5 nolu ogrenci listeye başarıyla eklendi
+1/14/2022 1:39:02 PM: 2 nolu ogrenci listemze eklendi ve öğrenciler listesi basariyla guncellendi
+1/14/2022 1:43:50 PM: 2 nolu öğrencinin bilgileri görüntülendi
+1/14/2022 1:44:06 PM: Bütün öğrencilerin listesi görüntülendi

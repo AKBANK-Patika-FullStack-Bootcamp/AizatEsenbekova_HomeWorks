@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\happy\\source\\repos\\Odev1\\Odev1.csproj": {}
+    "C:\\Users\\happy\\source\\repos\\bootcampHomeworks\\Odev1\\Odev1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\happy\\source\\repos\\Odev1\\Odev1.csproj": {
+    "C:\\Users\\happy\\source\\repos\\bootcampHomeworks\\Odev1\\Odev1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\happy\\source\\repos\\Odev1\\Odev1.csproj",
+        "projectUniqueName": "C:\\Users\\happy\\source\\repos\\bootcampHomeworks\\Odev1\\Odev1.csproj",
         "projectName": "Odev1",
-        "projectPath": "C:\\Users\\happy\\source\\repos\\Odev1\\Odev1.csproj",
+        "projectPath": "C:\\Users\\happy\\source\\repos\\bootcampHomeworks\\Odev1\\Odev1.csproj",
         "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\happy\\source\\repos\\Odev1\\obj\\",
+        "outputPath": "C:\\Users\\happy\\source\\repos\\bootcampHomeworks\\Odev1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
