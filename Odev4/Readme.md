@@ -30,7 +30,11 @@ First off all you need to install some packages below to your project
         }
    ```
 * db_connections
- 
+There two classes in db_connections:
+    * StudentsOperations.cs - send Http methods to StudentDbOperations
+    * StudentsDbOperations.cs - processes database queries.
+    
+*************************************************************************************************
 I have database which name is StudentDB. Its diagram is below:
 ![image](https://user-images.githubusercontent.com/60337657/149983008-43e7d813-2035-42c4-8b04-4d174e1c51f9.png)
 
@@ -44,4 +48,22 @@ I will try my operations on the Student table
 ## [HttpGet]
 ```
 Select * from student
+```
+## [HttpGet("{id}")]
+```
+Select * from student where StudentID=id
+```
+## [HttpPost]
+```
+Insert into student {Name, Surname, Age, GuideId, AddressId} values {'Aizat', 'Esenbekova',21,4,2}
+```
+
+ Update age=34 student whose id=5;
+## [HttpPut("{5}")]
+```
+Update student set age=34 where SudentID=5
+```
+## [HttpDelete("{id}")]
+```
+Delete from student where StudentID=id
 ```
