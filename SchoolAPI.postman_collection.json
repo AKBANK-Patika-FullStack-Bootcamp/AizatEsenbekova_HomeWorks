@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "22ab07c4-9953-4c67-bdcd-919a508bf5c1",
+		"name": "School API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "StudentsOperations",
+			"item": [
+				{
+					"name": "Show All List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}StudentsOperations",
+							"host": [
+								"{{local}}StudentsOperations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show one student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}StudentsOperations/6",
+							"host": [
+								"{{local}}StudentsOperations"
+							],
+							"path": [
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addStudent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentID\": 8,\r\n    \"name\": \"WonderWall\",\r\n    \"surname\": \"Kapkarashka\",\r\n    \"age\": 25,\r\n    \"guideId\": 7,\r\n    \"addressId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}StudentsOperations",
+							"host": [
+								"{{local}}StudentsOperations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"studentID\": 6,\r\n    \"name\": \"Miktibek\",\r\n    \"surname\": \"Omur\",\r\n    \"age\": 22,\r\n    \"guideId\": 4,\r\n    \"addressId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}StudentsOperations/6",
+							"host": [
+								"{{local}}StudentsOperations"
+							],
+							"path": [
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{local}}StudentsOperations/8",
+							"host": [
+								"{{local}}StudentsOperations"
+							],
+							"path": [
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "http://localhost:5112/",
+			"type": "string"
+		},
+		{
+			"key": "student",
+			"value": "StudentsOpertaions ",
+			"type": "string"
+		}
+	]
+}
