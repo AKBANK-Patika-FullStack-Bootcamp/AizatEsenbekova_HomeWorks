@@ -56,6 +56,31 @@ namespace db_connection.Controllers
                 return "Student added to databse successfully";
             }
         }
+
+        //update student's information from database by id
+        public String updateStudent(Student newValue,int id)
+        {
+            //find student from database
+            Student? oldValue=new Student();
+            oldValue=_context.Student.FirstOrDefault(y=>y.StudentID==id);
+            if(oldValue==null)
+            {
+                return "This student is not in the database";
+            }
+            else
+            {
+                oldValue.StudentID = newValue.StudentID;
+                oldValue.Name = newValue.Name;
+                oldValue.Surname = newValue.Surname;
+                oldValue.Age = newValue.Age;
+                oldValue.GuideId = newValue.GuideId;
+                oldValue.AddressId = newValue.AddressId;
+                _context.SaveChanges();
+                return "Student's information updates successfully";
+                
+            }
+           
+        }
         
     }
 }

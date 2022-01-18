@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\happy\\source\\repos\\Odev4\\Entities\\Entities.csproj": {}
+    "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\happy\\source\\repos\\Odev4\\DAL\\DAL.csproj": {
+    "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\happy\\source\\repos\\Odev4\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\happy\\source\\repos\\Odev4\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\happy\\source\\repos\\Odev4\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\happy\\source\\repos\\Odev4\\Entities\\Entities.csproj": {
+    "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\happy\\source\\repos\\Odev4\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\happy\\source\\repos\\Odev4\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\happy\\source\\repos\\Odev4\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -98,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\happy\\source\\repos\\Odev4\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\happy\\source\\repos\\Odev4\\DAL\\DAL.csproj"
+              "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\DAL\\DAL.csproj"
               }
             }
           }

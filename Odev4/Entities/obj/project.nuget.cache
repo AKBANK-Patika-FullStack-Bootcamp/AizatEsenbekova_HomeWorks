@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gYtmU7x7PkGT2EtyIevdJgldL2dp37Ub3ba2Th/MQi4uEFDGo5axcC/2xGpBuuBsQJj1tXQBnctTJfbd+g7y6w==",
+  "dgSpecHash": "2+g55sL66ZeW9msl8idCdrsdjjaf4ylYAwKFB0EIOmgwHK1mTcNqgGJqi3fQrz8sv4WeZCI7wzPWOuXfuJQViw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\happy\\source\\repos\\Odev4\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\happy\\source\\repos\\New folder\\Odev4\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\happy\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\happy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

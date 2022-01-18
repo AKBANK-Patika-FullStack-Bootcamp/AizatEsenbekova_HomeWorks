@@ -29,3 +29,20 @@ C:\Users\happy\source\repos\Odev4\Entities\obj\Debug\net6.0\Entities.dll
 C:\Users\happy\source\repos\Odev4\Entities\obj\Debug\net6.0\ref\Entities.dll
 C:\Users\happy\source\repos\Odev4\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\happy\source\repos\Odev4\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\ref\Entities.dll
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\DAL.dll
+C:\Users\happy\source\repos\New folder\Odev4\Entities\bin\Debug\net6.0\DAL.pdb
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\happy\source\repos\New folder\Odev4\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache

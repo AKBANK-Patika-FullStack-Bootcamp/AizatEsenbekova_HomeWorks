@@ -33,35 +33,15 @@ namespace db_connection.Controllers
            return message;
         }
 
-      /*
-
-        [HttpPost]
-        //Listeye ogrenci ekle
-        public Result PostStudents(Student ogr)
+        //update student's information by id
+        [HttpPut("{id}")]
+        public String UpdateStudent(Student newValue, int id)
         {
-            //Liste dolduruluyor
-            resultList = AddUser();
-        
-            //Eklemek istedigimiz ogrenci listede var mi?
-            bool control = resultList.Select(x => x.StudentId == ogr.StudentId).FirstOrDefault();
-            if(control==false)
-            {
-                //Listeye yeni ogrenci ekleniyor
-                resultList.Add(ogr);
-                result.status = 1;
-                result.message = "Listeye ogrenci basariyla eklendi";
-            }
-            else
-            {
-                result.status = 0;
-                result.message = "Ekleme basarisiz";
-                result.students = resultList;
-            }
-               
-
-            return result;
-
+            String message=dboperations.updateStudent(newValue, id);
+            return message;
         }
+
+  /*
 
         [HttpPut("{id}")]
         //Litedeki ogrencinin bilgilerini guncelle
