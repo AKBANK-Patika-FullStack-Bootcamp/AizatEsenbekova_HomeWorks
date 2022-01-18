@@ -41,57 +41,14 @@ namespace db_connection.Controllers
             return message;
         }
 
-  /*
-
-        [HttpPut("{id}")]
-        //Litedeki ogrencinin bilgilerini guncelle
-        public Result UpdateStudent(Student newValue, int id)
-        {
-            resultList=AddUser();
-            //Kullanici tarafindan idsi alinan ogrencini listeden buluyoruz
-            Student ? oldValue=resultList.Find(y=>y.StudentId ==id);
-            if(oldValue!=null)
-            {
-                //Eger ogrenci listede varsa bilgilerini guncelliyoruz
-                resultList.Remove(oldValue); 
-                resultList.Add(newValue);
-                result.status = 1;
-                result.message = "Ogrenciler listesi basariyla guncellendi";
-                result.students = resultList;
-            }
-            else
-            {
-                result.status = 0;
-                result.message = "Bilgisini guncellemek istediginiz ogrenci listede bulunamadi";
-            }
-            return result;
-           
-        }
-
+        //delete student from database
         [HttpDelete("{id}")]
-        //Listeden ogrenci sil
-        public Result DeleteStudent(int id)
+        public String DeleteStudent(int id)
         {
-            //her seferinde listeyi doldur
-            resultList = AddUser();
-            Student ? deletedValue=resultList.Find(y=>y.StudentId==id);
-            if (deletedValue != null)
-            {
-                //Eger ogrenci listede varsa siliyoruz
-                resultList.Remove(deletedValue);
-                result.status = 1;
-                result.message = "Ogrenciler listesi basariyla guncellendi";
-                result.students = resultList;
-            }
-            else
-            {
-                result.status = 0;
-                result.message = "Bilgisini guncellemek istediginiz ogrenci listede bulunamadi";
-            }
-            return result;
-
+            String message=dboperations.deleteStudent(id);
+            return message;
         }
-       
-     */
+
+  
     }
 }

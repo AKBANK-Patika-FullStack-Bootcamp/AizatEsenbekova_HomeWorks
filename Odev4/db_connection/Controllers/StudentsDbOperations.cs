@@ -81,6 +81,27 @@ namespace db_connection.Controllers
             }
            
         }
+        //delete student from database by id
+        public String deleteStudent(int id)
+        {
+            Student? student = new Student();
+            //find student from database
+            student=_context.Student.FirstOrDefault(x=>x.StudentID==id);
+            if(student==null)
+            {
+                //can't find student from database
+                return "This student is not in the database";
+            }
+            else
+            {
+                //remove student 
+                _context.Student.Remove(student);
+                _context.SaveChanges();
+                return "Student deleted from database succesfully";
+            }
+
+
+        }
         
     }
 }
