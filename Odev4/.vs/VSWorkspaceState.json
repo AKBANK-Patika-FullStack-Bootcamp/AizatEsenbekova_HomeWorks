@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\db_connection"
+    "\\db_connection",
+    "\\db_connection\\Controllers"
   ],
-  "SelectedNode": "\\db_connection\\obj",
+  "SelectedNode": "\\db_connection\\Controllers\\StudentsOperations.cs",
   "PreviewInSolutionExplorer": false
 }

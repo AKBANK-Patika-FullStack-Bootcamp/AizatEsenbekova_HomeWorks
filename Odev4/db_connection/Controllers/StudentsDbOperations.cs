@@ -11,18 +11,6 @@ namespace db_connection.Controllers
     {
 
         private StudentContext _context = new StudentContext();
-        public void AddModel(Student student)
-        {
-            try
-            {
-                _context.Student.Add(student);
-                _context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
        
         //to get all students from database
         public List<Student> getStudents()

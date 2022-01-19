@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Odev4",
+    "\\Odev4\\db_connection",
+    "\\Odev4\\db_connection\\Controllers"
   ],
-  "SelectedNode": "\\Odev1.sln",
+  "SelectedNode": "\\Odev4\\Readme.md",
   "PreviewInSolutionExplorer": false
 }
