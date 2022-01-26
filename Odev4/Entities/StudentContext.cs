@@ -22,11 +22,13 @@ namespace Entities
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Guide>().ToTable("Guide");
             modelBuilder.Entity<Address>().ToTable("Address");
+            modelBuilder.Entity<APIAuthority>().ToTable("APIAuthority");
         }
 
         public DbSet<Student> Student{ get; set; }
         public DbSet<Guide> Guide{ get; set; }
         public DbSet<Address> Address { get; set; }
+        public DbSet<APIAuthority> APIAuthority { get; set;}
    
     }
 }

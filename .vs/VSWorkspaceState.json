@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Odev4",
+    "\\Odev4\\DAL",
+    "\\Odev4\\DAL\\Model",
     "\\Odev4\\db_connection",
-    "\\Odev4\\db_connection\\Controllers"
+    "\\Odev4\\db_connection\\Controllers",
+    "\\Odev4\\Entities"
   ],
+  "SelectedNode": "\\Odev4\\Entities\\StudentContext.cs",
   "PreviewInSolutionExplorer": false
 }
