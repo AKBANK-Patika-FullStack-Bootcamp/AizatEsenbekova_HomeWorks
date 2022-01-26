@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using DAL.Model;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace db_connection.Controllers
 {
@@ -11,6 +12,7 @@ namespace db_connection.Controllers
         List<Student> resultList = new List<Student>();
         StudentsDbOperations dboperations= new StudentsDbOperations();
       
+        [Authorize]
         [HttpGet]
         //Get list of all students
         public List<Student> GetStudents()

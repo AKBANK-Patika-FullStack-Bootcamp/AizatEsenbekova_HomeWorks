@@ -37,7 +37,7 @@ namespace JwtWebApiTutorial.Controllers
             return "User succesfully added";
         }
 
-      /*[HttpPost("login")]
+        [HttpPost("login")]
         public async Task<ActionResult<string>> Login([FromHeader] LoginDto request)
         {
             APIAuthority tokenUser = new APIAuthority();
@@ -49,6 +49,7 @@ namespace JwtWebApiTutorial.Controllers
             if (result != null)
             {
                 string token = CreateToken(login);
+                //return "Giris basarili";
                 return Ok(token);
 
             }
@@ -63,7 +64,7 @@ namespace JwtWebApiTutorial.Controllers
         {
             List<Claim> claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, login.Username),
+                new Claim(ClaimTypes.Name, login.UserName),
                 new Claim(ClaimTypes.Role, "Admin")
             };
 
@@ -80,7 +81,7 @@ namespace JwtWebApiTutorial.Controllers
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
             return jwt;
-        }*/
+        }
         public string MD5Hash(string _input)
         {
 

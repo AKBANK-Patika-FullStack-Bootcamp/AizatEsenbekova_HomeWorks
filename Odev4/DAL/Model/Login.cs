@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,9 @@ namespace DAL.Model
     }
     public class  LoginDto
     {
+        [FromHeader]
         public string UserName { get; set; } = string.Empty;
+        [FromHeader]
         public string PasswordHash { get; set; }= string.Empty;
     }
 
