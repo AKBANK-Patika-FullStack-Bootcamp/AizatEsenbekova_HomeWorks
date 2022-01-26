@@ -67,3 +67,5 @@ Update student set age=34 where SudentID=5
 ```
 Delete from student where StudentID=id
 ```
+
+<strong> I also add my <em> SchoolApi.postman_collection.json </em> File to this repository </strong>
