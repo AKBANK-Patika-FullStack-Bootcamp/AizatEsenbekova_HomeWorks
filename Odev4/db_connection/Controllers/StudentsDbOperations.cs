@@ -11,14 +11,17 @@ namespace db_connection.Controllers
     {
 
         private StudentContext _context = new StudentContext();
-       
+        
         //to get all students from database
         public List<Student> getStudents()
         {
             List<Student> resultList=new List<Student>();
             resultList=_context.Student.ToList();
+            InnerJoinExample();
             return resultList;
         }
+
+
         //get one sepific students from database by id
         public Student getStudent(int id)
         {
@@ -89,6 +92,15 @@ namespace db_connection.Controllers
             }
 
 
+        }
+
+        //innerjoin Example
+        public void InnerJoinExample()
+        {
+            StudentDetail users = _context.Student.Join(_context.Address, a => a.AddressId,
+                u => u.Id,
+                (users, address) => new StudentDetail { Id = users.StudentID, Province = address.Province, Name = users.Name }).FirstOrDefault();
+     
         }
         
     }
