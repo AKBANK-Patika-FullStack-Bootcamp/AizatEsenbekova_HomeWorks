@@ -197,6 +197,8 @@ C:\Users\happy\source\repos\New folder\Odev4\db_connection\obj\Debug\net6.0\db_c
 C:\Users\happy\source\repos\New folder\Odev4\db_connection\obj\Debug\net6.0\ref\db_connection.dll
 C:\Users\happy\source\repos\New folder\Odev4\db_connection\obj\Debug\net6.0\db_connection.pdb
 C:\Users\happy\source\repos\New folder\Odev4\db_connection\obj\Debug\net6.0\db_connection.genruntimeconfig.cache
-C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Scrutor.dll
+C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\happy\source\repos\New folder\Odev4\db_connection\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
