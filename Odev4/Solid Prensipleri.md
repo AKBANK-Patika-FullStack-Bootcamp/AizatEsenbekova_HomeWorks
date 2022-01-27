@@ -92,3 +92,178 @@ public class File
   ```
     
   Dolayısıyla, yeni bir dosya türüne kaydetmek istiyorsak, sadece File class yapısından Inheritance işlemi uygularız. Sonuç olarak File class yapısı gelişime açık fakat değişiklik için kapalıdır.
+* <strong> L: Liskov Substitution Principle (LSP) </strong>
+Liskov Substitution Principle’a göre alt sınıflardan oluşturulan nesnelerin üst sınıfların nesneleriyle yer değiştirdiklerinde aynı davranışı göstermek zorundadır. Yani; türetilen sınıflar, türeyen sınıfların tüm özelliklerini kullanmak zorundadır. 
+
+Aşağıdaki kodda Striker aslında ihtiyaç duymadığı KeepTheBall metodunu barındırmakta yani bir forvet oyuncusu topu eliyle tutamaz. Normal şartlarda bu fonksiyonu kullanamayacak, bu fonksiyonda exception fırlatması gerekecektir. Yani aslında gereksiz bir kod kalabalığı ve kod yönetimi açısından ek bir efor oluşacaktır, bunun nedeni base classda aslında gereksiz bir metod bulunmasıdır. 
+
+```
+public abstract class Player
+    {
+        public virtual void KickTheBall()
+        {
+            // Ball was kicked !
+        }
+
+        public virtual void KeepTheBall()
+        {
+            // Ball was kept !
+        }
+    }
+
+    public class Striker : Player
+    {
+        public override void KeepTheBall()
+        {
+            // Striker should not keep the ball !
+            throw new NotImplementedException();
+        }
+
+        public override void KickTheBall()
+        {
+            // Ball was kicked by Striker !
+        }
+    }
+
+    public class Goalkeeper : Player
+    {
+        public override void KeepTheBall()
+        {
+            // Ball was kept by Goalkeeper!
+        }
+
+        public override void KickTheBall()
+        {
+            // Ball was kicked by Goalkeeper !
+        }
+    }
+  ```
+
+Bu ayrıştırmayı yapmak için aşağıdaki gibi bir kodlama yapmalıyız.
+
+```
+	public abstract class Player
+    {
+        public virtual void KickTheBall()
+        {
+            // Ball was kicked !
+        }
+    }
+
+    public interface IKeepTheBall
+    {
+        void KeepTheBall();
+    }
+
+    public class Striker : Player
+    {
+        public override void KickTheBall()
+        {
+            // Ball was kicked by Striker !
+        }
+    }
+
+    public class Goalkeeper : Player,IKeepTheBall
+    {
+        public override void KickTheBall()
+        {
+            // Ball was kicked by Goalkeeper !
+        }
+
+        public void KeepTheBall()
+        {
+            // Ball was kept by Goalkeeper !
+        }
+    }
+ ```
+ * <strong> I:  Interface Segregation Principle (ISP) </strong>
+ Interface Segregation prensibine göre, her interface’in belirli bir amacı olmalıdır. Tüm metodları kapsayan tek bir interface kullanmak yerine, herbiri ayrı metod gruplarına hizmet veren birkaç interface tercih edilmektedir.
+
+Aşağıdaki interface birden fazla iş yapmaktadır. Bu arayüzden türetilen sınıflar tüm metodları kullanmak zorunda kalacaktır. Bunun yerine bu arayüzler daha küçük iş birimlerine ayrılmalıdır.
+
+```
+	interface IPost
+    {
+        void CreatePost();
+        void ReadPost();
+    }
+```
+
+Küçük parçalara ayrılmış interface’ler sınıflara daha kolay eklenirler. Bu sayede bu arayüzlerden türetilen sınıflar kullanmadıkları metodları almamış olurlar.
+
+```
+    interface IPostCreate
+    {
+        void CreatePost();
+    }
+
+    interface IPostRead
+    {
+        void ReadPost();
+    }
+```
+
+* <strong> D: Dependency Inversion Principle (DIP) </strong>
+
+Robert C. Martin’in Dependency Inversion Prensibi’ne göre:
+
+1. Üst seviye (High-Level) sınıflar, alt seviye (Low-Level) sınıflara bağlı olmamalıdır, ilişki abstraction veya interface kullanarak sağlanmalıdır,
+2. Abstraction(soyutlama) detaylara bağlı olmamalıdır, tam tersi detaylar abstraction(soyutlama)’lara bağlı olmalıdır.
+
+Aşağıdaki Blog sınıfı içerisindeki Create metodu, Post sınıfı içerisindeki CreatePost isimli metoda bağımlıdır. Bunun sebebi CreatePost method’unun Create içerisinde kullanılmasıdır. Bu metotda yapılacak tüm değişiklikler Create method’unda da değişiklik gerektirecektir.
+
+
+```
+    class Blog
+    {
+        // High Level Class
+        public void Create()
+        {
+            Post post = new Post();
+            post.CreatePost(true);
+        }
+    }
+
+    class Post
+    {
+        // Low Level Class
+        public void CreatePost(bool picture)
+        {
+            // Process
+        }
+    }
+```
+
+Bu bağımlılıktan kurtulabilmek için aşağıdaki kodu uygulayabiliriz.
+
+```
+    interface IContent
+    {
+        void CreatePost(bool picture);
+    }
+
+    class Blog
+    {
+        //High Level Class
+        IContent content;
+        public Blog()
+        {
+            content = new Post();
+        }
+        public void Create()
+        {
+            content.CreatePost(true);
+        }
+    }
+
+    class Post : IContent
+    {
+        //Low Level Method
+        public void CreatePost(bool picture)
+        {
+            //Process
+        }
+    }
+```
+
+Yapılan işlem neticesinde alt seviye sınıfı olan Post, Interface sayesinde soyutlaştırılarak, üst seviye sınıfımızda alt seviye sınıfına dair olan bağımlılığı tersine çevirmiş bulunmaktayız. Yani alt seviye sınıf olan Post, Interface’e bağımlı bir hale gelmiştir.
