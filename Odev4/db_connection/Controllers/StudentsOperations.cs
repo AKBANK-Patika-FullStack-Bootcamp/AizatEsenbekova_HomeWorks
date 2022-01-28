@@ -20,6 +20,21 @@ namespace db_connection.Controllers
             return dboperations.getStudents();
         }
 
+
+        //paging- get just some students by size
+        [HttpGet("GetStudentPaging")]
+        public IActionResult GetUserPaging([FromQuery] OwnerParameters ownerParameters)
+        {
+            var owners = dboperations.getStudents() //all students on students table
+                                                
+           .Skip(ownerParameters.PageNumber) //from which row
+           .Take(ownerParameters.PageSize) //by given size, Ex: 3:2
+           .ToList();
+
+
+            return Ok(owners);
+        }
+
         [HttpGet("{id}")]
         //get one specific student
         public Student GetStudent(int id)
