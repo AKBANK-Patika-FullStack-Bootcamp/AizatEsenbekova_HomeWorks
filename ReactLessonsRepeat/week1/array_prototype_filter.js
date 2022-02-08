@@ -15,8 +15,6 @@ const creatures = [
     {name: "Voldemort", habitat: "Unkind"}
 ];
 
-const funnyyCharacter=creatures.filter(ch=>{
-    return ch.personality=="Funny";
-});
+const funnyyCharacter=creatures.filter(ch=>ch.personality=="Funny");
 
 console.log(funnyyCharacter);

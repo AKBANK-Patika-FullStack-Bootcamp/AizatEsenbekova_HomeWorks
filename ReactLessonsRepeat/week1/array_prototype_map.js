@@ -26,6 +26,7 @@ const newPato = map.call(pato,letter=(x)=>{
 console.log([...pato]); //kolay yol
 */
 
+
 const myUsers=[
     {name:'Asli', likes:'patates'},
     {name:'Aizat',likes:'Cikolata'},

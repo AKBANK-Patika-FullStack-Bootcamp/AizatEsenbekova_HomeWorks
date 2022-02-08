@@ -87,7 +87,7 @@ console.log("Area of the circle is: "+areaOfTheCircle(2));
 /*var person={
     name:"Alex",
     actions:["reading","dancing","running"],
-    printActions: function()
+    printActions()
     {
         var _this=this;
         this.actions.forEach(function(action)
@@ -96,11 +96,11 @@ console.log("Area of the circle is: "+areaOfTheCircle(2));
         });
     }
 };
-person.printActions();*/
+person.printActions();
+*/
 
 
-/*
-function foo()
+/*function foo()
 {
     var bar="bar";
     let baz="baz";
@@ -111,11 +111,14 @@ function foo()
 
 }
 foo();
+console.log(bar);
+console.log(bar);
+console.log(bar);
 const foo2="foo";
 console.log(bar);// is not defined
 let baz="baziko";
-console.log(baz);
-*/
+console.log(baz);*/
+
 
 /*
 // ** iflerin icinde tanimlanan var her yerde tanimlanmis oluyor
