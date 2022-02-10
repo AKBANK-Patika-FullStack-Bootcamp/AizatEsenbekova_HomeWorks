@@ -1,5 +1,5 @@
 import Pokemon from "./components/Pokemon";
-import React from "react";
+import React, {useState} from "react";
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     {name:"Anisa", id:3, height:162},
     {name:"Zalkar", id:4, height:undefined} //undefined olunca default değeri almış oluyor
   ]
+  const [isActive , setActive]= useState();
   return (
     <div className="App">
     <div className="App-header">
@@ -18,7 +19,11 @@ function App() {
       <Pokemon pokemonName={pokemonList[3].name} pokemonHeight={pokemonList[3].height}/> */
       pokemonList.map((pokemon,index)=>
       {
-        return <Pokemon  pokemonName={pokemon.name} pokemonHeight={pokemon.height} key={index}/>
+        return <Pokemon  isActive={isActive===pokemon.name} 
+        setActive={setActive}
+        pokemonName={pokemon.name}
+        pokemonHeight={pokemon.height} 
+        key={index}/>
       })
       }
     </div>
