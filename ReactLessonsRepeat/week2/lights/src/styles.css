@@ -1,0 +1,22 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: black;
+  }
+  
+  #root {
+  
+  }
+
+.traffic-light{
+    
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 50px;
+    background-color: #333;
+    width: 120px;
+    height: 320px;
+    border-radius: 30px;
+}
+  

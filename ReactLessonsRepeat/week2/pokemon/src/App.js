@@ -1,4 +1,5 @@
 import Pokemon from "./components/Pokemon";
+import Parent from "./components/Parent"
 import React, {useEffect, useState} from "react";
 import './App.css';
 import axios from "axios";
@@ -37,8 +38,9 @@ function App() {
         pokemonName={pokemon.name}
         pokemonHeight={pokemon.height} 
         key={index}/>
-      })
-      }
+      })}
+      <Parent/>
+      
     </div>
     </div>
   );
